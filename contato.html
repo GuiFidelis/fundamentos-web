@@ -24,12 +24,14 @@
           <div class="container">
             <div class="textbox">
               <label for="nome">Nome: </label>
-              <input type="text" id="nome" />
+              <input type="text" id="nome" onkeyup="validaNome()" />
             </div>
+            <div id="txtNome"></div>
             <div class="textbox">
               <label for="email">Email: </label>
-              <input type="text" id="email" />
+              <input type="text" id="email" onkeyup="validaEmail()" />
             </div>
+            <div id="txtEmail"></div>
             <div class="textbox">
               <label for="assunto">Assunto: </label>
             </div>
@@ -38,9 +40,11 @@
               id="assunto"
               cols="60"
               rows="20"
+              onkeyup="validaAssunto()"
             ></textarea>
+            <div id="txtAssunto"></div>
             <div class="textbox">
-              <button>Enviar</button>
+              <button onclick="enviar()">Enviar</button>
             </div>
           </div>
         </form>
@@ -60,10 +64,15 @@
               allowfullscreen=""
               aria-hidden="false"
               tabindex="0"
+              onmousemove="mapaZoom()"
+              onmouseout="mapaNormal()"
+              id="mapa"
             ></iframe>
           </div>
         </div>
       </div>
     </section>
+
+    <script type="text/javascript" src="assets/js/script.js"></script>
   </body>
 </html>
