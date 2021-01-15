@@ -1,5 +1,6 @@
 :root {
   --background-color: #151515;
+  --quote-divisor-color: #ffffff;
 }
 
 .bg-colorstyle {
@@ -12,7 +13,7 @@
   display: block;
   width: 60px;
   height: 3px;
-  background: #fff;
+  background: var(--quote-divisor-color);
   margin: 20px auto;
 }
 
@@ -26,17 +27,6 @@
 
 /* ------------------------- Contato ------------------------------ */
 
-
-/* .textbox {
-  display: flex;
-  align-content: left;
-  padding: 10px 0;
+textarea {
   width: 100%;
 }
-
-.textbox label {
-  color: #fff;
-  width: 100px;
-  text-align: left;
-} */
-

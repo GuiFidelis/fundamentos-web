@@ -25,8 +25,7 @@ function validaNome() {
       txtNome.innerHTML = 'Nome Inválido'
       txtNome.style.color = 'red' 
    } else {
-      txtNome.innerHTML = 'Nome Válido'
-      txtNome.style.color = 'green'
+      txtNome.style.display = 'none'
       nomeOk = true
    }
 
@@ -39,8 +38,7 @@ function validaEmail() {
       txtEmail.innerHTML = 'E-mail inválido'
       txtEmail.style.color = 'red'
    } else {
-      txtEmail.innerHTML = 'E-mail válido'
-      txtEmail.style.color = 'green'
+      txtEmail.style.display = 'none'
       emailOk = true
    }
 }

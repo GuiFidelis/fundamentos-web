@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FALLEN CSGO | Home</title>
+    <title>FALLEN CSGO | Contato</title>
     <link rel="stylesheet" href="assets/css/style.css" />
     <link
       rel="stylesheet"
@@ -45,67 +45,76 @@
           </li>
         </ul>
       </div>
-      <a class="navbar-brand text-white " href="index.html">FALLEN CSGO</a>
+      <a class="navbar-brand text-white " href="index.html">FALLEN CSGO FAN PAGE</a>
     </nav>
 
 
+<!-- --------------------- -->
 
-    <form>
-  <div class="form-row">
-    <div class="form-group col-md-6">
-      <label for="inputEmail4">Email</label>
-      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-    </div>
-    <div class="form-group col-md-6">
-      <label for="inputPassword4">Senha</label>
-      <input type="password" class="form-control" id="inputPassword4" placeholder="Senha">
-    </div>
-  </div>
-  <div class="form-group">
-    <label for="inputAddress">Endereço</label>
-    <input type="text" class="form-control" id="inputAddress" placeholder="Rua dos Bobos, nº 0">
-  </div>
-  <div class="form-group">
-    <label for="inputAddress2">Endereço 2</label>
-    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartamento, hotel, casa, etc.">
-  </div>
-  <div class="form-row">
-    <div class="form-group col-md-6">
-      <label for="inputCity">Cidade</label>
-      <input type="text" class="form-control" id="inputCity">
-    </div>
-    <div class="form-group col-md-4">
-      <label for="inputEstado">Estado</label>
-      <select id="inputEstado" class="form-control">
-        <option selected>Escolher...</option>
-        <option>...</option>
-      </select>
-    </div>
-    <div class="form-group col-md-2">
-      <label for="inputCEP">CEP</label>
-      <input type="text" class="form-control" id="inputCEP">
-    </div>
-  </div>
-  <div class="form-group">
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" id="gridCheck">
-      <label class="form-check-label" for="gridCheck">
-        Clique em mim
-      </label>
-    </div>
-  </div>
-  <button type="submit" class="btn btn-primary">Entrar</button>
-</form>
 
+<div class="container">
+  <h1 class="font-weight-bold text-white text-center py-3">
+    Contato
+  </h1>
+  <form action="">
+    <div class="form-row text-white">
+      <div class="col-md-5 mb-3">
+      
+         <label for="nome">Nome: </label>
+         <input type="text" id="nome" onkeyup="validaNome()" />
+      
+        <div id="txtNome"></div>
+      
+        <label for="email">Email: </label>
+        <input type="text" id="email" onkeyup="validaEmail()" />
+    
+        <div id="txtEmail"></div>
+     
+        <label for="assunto">Assunto: </label>
+    
+        <textarea
+          name="assunto"
+          id="assunto"
+          cols="20"
+          rows="10"
+          onkeyup="validaAssunto()"
+        ></textarea>
+        <div id="txtAssunto"></div>
+       
+        <div class="col-auto p-0 my-1">
+          <button type="submit" class="btn btn-primary" onclick="enviar()">Enviar</button>
+        </div>
+      </div>
+
+      <div class="col-md-7 mb-3 text-center">
+        <p>Endereço: Av. Paulista, 1000 / São Paulo - SP</p>
+          <div class="d-flex justify-content-center">
+            
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.7778984926713!2d-47.16468428502047!3d-23.64812378463996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf74e47eb4f0b9%3A0xa25b7b633e22c2aa!2sAv.%20Paulista%2C%201000%20-%20Recreio%2C%20Ibi%C3%BAna%20-%20SP%2C%2018150-000!5e0!3m2!1spt-BR!2sbr!4v1610389450810!5m2!1spt-BR!2sbr"
+              width="500"
+              height="300"
+              frameborder="0"
+              style="border: 0"
+              allowfullscreen=""
+              aria-hidden="false"
+              tabindex="0"
+              onmousemove="mapaZoom()"
+              onmouseout="mapaNormal()"
+              id="mapa"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
 
     
 
 <!--       
     <section class="infogeral">
-      
-
-      <div class="contato">
-        <form action="">
+       <form action="">
           <div class="container">
             <div class="textbox">
               <label for="nome">Nome: </label>
@@ -133,6 +142,9 @@
             </div>
           </div>
         </form>
+
+      <div class="contato">
+       
 
         <div class="container">
           <div class="mapa">
