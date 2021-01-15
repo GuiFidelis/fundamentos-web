@@ -67,8 +67,8 @@ function enviar() {
 }
 
 function mapaZoom() {
-    mapa.style.width = '800px'
-    mapa.style.height = '600px'
+    mapa.style.width = '600px'
+    mapa.style.height = '320px'
  }
  
  function mapaNormal() {
