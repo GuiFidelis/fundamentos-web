@@ -1,20 +1,16 @@
 :root {
   --background-color: #151515;
+  --background-color-img: #000000;
   --quote-divisor-color: #ffffff;
+}
+
+* {
+  text-decoration: none;
+  list-style: none;
 }
 
 .bg-colorstyle {
   background: var(--background-color);
-}
-
-.quote-externo p:before,
-.quote-externo p:after {
-  content: "";
-  display: block;
-  width: 60px;
-  height: 3px;
-  background: var(--quote-divisor-color);
-  margin: 20px auto;
 }
 
 .container img {
@@ -25,8 +21,26 @@
   width: 4rem;
 }
 
-/* ------------------------- Contato ------------------------------ */
+/* Index */
 
-textarea {
-  width: 100%;
-}
+    .quote-externo p:before,
+    .quote-externo p:after {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 3px;
+      background: var(--quote-divisor-color);
+      margin: 20px auto;
+    }
+
+/* Competicoes */
+
+/* Contato */
+
+    textarea {
+      width: 100%;
+    }
+
+    .circle-button {
+      border-radius: 50%;
+    }
